@@ -140,7 +140,7 @@ footer {
     animation: rotateFreeyond 2s linear infinite;
 }
 .loginLoading::after {
-    content: "free Yond";
+    content: "Free Yond";
     font-size: 10px;
     background-color: rgb(49, 49, 49);
     position: absolute;
