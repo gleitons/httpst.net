@@ -1,0 +1,160 @@
+@font-face {
+    font-family: freeyonde-Black;
+    src: url(/src/fonts/Fira_Sans/FiraSans-Black.ttf);
+    
+}
+@font-face {
+    font-family: freeyonde-lite;
+    src: url(/src/fonts/Fira_Sans/FiraSans-Light.ttf);
+}
+:root {
+    --fb:freeyonde-Black;
+    --fl:freeyonde-lite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(102, 123, 141);
+    font-family: var(--fl);
+}
+header{
+    width: 100%;
+    background-image:linear-gradient(to bottom, rgb(122, 171, 214), rgb(119, 127, 139));
+    color: rgb(202, 199, 199);
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 5px 10px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px; 
+}
+legend{
+    font-family: var(--fb);
+}
+input {
+    border: none;
+    width: 95%;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    
+}
+input:focus{
+    box-shadow: blue 0px 0px 20px;
+    border: none;
+}
+.SendTo {
+    background-image: linear-gradient(to left, rgb(112, 183, 216), rgb(147, 156, 236));
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 50px;
+    font-family: var(--fb);
+    font-size: 20px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 0px 10px;
+    cursor: pointer;
+}
+.SendTo:hover{
+    background-image: linear-gradient(to left, rgb(147, 156, 236),rgb(112, 183, 216));
+}
+.LogintoFreeYond{
+    font-family: var(--fb);
+    color: white;
+    background-image: linear-gradient(to right, #008cff, rgb(70, 110, 184));
+    padding: 20px;   
+    width: 400px;
+    margin:auto;
+    margin-bottom: 100px; 
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0px 10px 20px;
+    
+    
+   
+}
+.LogintoFreeYond > p {
+    margin-bottom: 10px;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-image:linear-gradient(to bottom,  rgb(119, 127, 139),rgb(122, 171, 214));
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 100%;
+    color: rgb(218, 218, 218);
+    box-shadow: rgba(0, 0, 0, 0.445) 0px -5px 10px;
+    
+}
+.registerNow {
+    background-color: rgba(255, 0, 0, 0.219);
+    font-family: var(--fl);
+    padding: 5px;
+    border-radius: 12px;
+    border: rgb(117, 111, 214) 3px solid;
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+.registerNow:hover{
+    color: black;
+    background-color: red;
+
+}
+.lincorrect{
+
+    color: rgb(218, 149, 149);
+}
+.welcome{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 400px;
+    
+    
+}
+.loginLoading{
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 0px 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+     
+    justify-content: center;
+    align-items: center;
+}
+.loginLoading::before {
+    content: "";
+    background-image: conic-gradient(
+        #92ceff 20deg,
+        transparent 120deg
+    );
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: -20px;
+    animation: rotateFreeyond 2s linear infinite;
+}
+.loginLoading::after {
+    content: "free Yond";
+    font-size: 10px;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+@keyframes rotateFreeyond {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
