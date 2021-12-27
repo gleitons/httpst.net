@@ -151,7 +151,17 @@ footer {
     border-radius: 50%;
     margin-left: -15px;
     margin-top: 5px;
+    
 }
+.link-free{
+    text-decoration: none;
+    color: rgb(202, 199, 199);
+}
+a{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+}
+
 @keyframes rotateFreeyond {
     0%{
         transform: rotate(0deg);
@@ -160,9 +170,10 @@ footer {
         transform: rotate(-360deg);
     }
 }
-@media (max-width:1200px) {
+
+@media (min-width:1200px) {
     body{
-        width: 1200px;
+        width: 100%;
     }    
 }
 @media (max-width:992px) {
@@ -198,12 +209,4 @@ footer {
         width: 300px;
     }
     
-}
-.link-free{
-    text-decoration: none;
-    color: rgb(202, 199, 199);
-}
-a{
-    text-decoration: none;
-    color: rgb(214, 214, 214);
 }
