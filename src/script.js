@@ -20,9 +20,10 @@ function loginFreeyond() {
 }
 function sendMessage() {
     const validatorTextArea = window.document.getElementById('insertTextA').value;
+    const viewButtonSend = document.getElementById('SForm');
     const dontContHTTP = "http";
     const dontContCom = ".com "
-    const viewButtonSend = document.getElementById('SForm');
+    
     if (validatorTextArea.match(dontContHTTP) || validatorTextArea.match(dontContCom)){
         window.location.href = '/dont-spam.html'
     }
