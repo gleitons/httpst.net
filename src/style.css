@@ -269,6 +269,13 @@ a{
     body{
         width: 768px;
     }    
+    .SendTo{
+        margin-top: 0px;
+    }
+    .LogintoFreeYond{
+        margin-top: -90px;
+        
+    }
 }
 @media (max-width:576px) {
     body{
@@ -279,6 +286,9 @@ a{
         
         
         
+    }
+    main{
+        margin-top: 0px;
     }
 }
 @media (max-width:390px) {
@@ -297,6 +307,7 @@ a{
     }
     .LogintoFreeYond{
         width: 300px;
+
     }
     
 }
