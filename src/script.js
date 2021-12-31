@@ -22,15 +22,15 @@ function sendMessage() {
     const validatorTextArea = window.document.getElementById('insertTextA').value;
     const viewButtonSend = document.getElementById('SForm');
     const dontContHTTP = "http";
-    const dontContCom = ".com "
+    const dontContCom = "/.com/"
     
-    if (validatorTextArea.match(dontContHTTP) || validatorTextArea.match(dontContCom)){
+    if (validatorTextArea.match(dontContHTTP) || validatorTextArea.match(/.com/)){
         window.location.href = '/dont-spam.html'
     }
     else {
         viewButtonSend.classList.replace('SendTo', 'ocult');
 
-        SendF.innerHTML = `<p>verified, Please click send again.</p><input class="SendTo" type="submit" id="SForm" value="Send"> `
+        SendF.innerHTML = `<p>Confirm that there is no link in the message.</p><input class="SendTo" type="submit" id="SForm" value="Confirmed"> `
     }
 
     //MessageText.innerHTML = `${validatorTextArea}`
