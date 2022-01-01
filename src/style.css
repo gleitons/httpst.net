@@ -229,6 +229,9 @@ a{
 .ocult {
     display: none;
 }
+.classRed{
+    background-image: linear-gradient(to right, #ff0000, rgb(184, 70, 70));
+}
 
 
 
