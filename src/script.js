@@ -1,10 +1,13 @@
 function loginFreeyond() {
     const logins = window.document.getElementById('nameLogin').value;
     const passw = window.document.getElementById('passworLogin').value;
+    const OcultList = document.getElementById('insertName');
     
 
     if (logins.length == "0") {
+        
         insertName.innerHTML = `<p class="lincorrect">enter a user</p>`
+        OcultList.classList.replace('ocult', 'bol');
     } else if (passw.length == "0") {
         insertPass.innerHTML = `<p class="lincorrect">enter a password</p>`
         
@@ -38,4 +41,20 @@ function sendMessage() {
     }
 
     //MessageText.innerHTML = `${validatorTextArea}`
+}
+
+function verifiquedState() {
+    const name = window.document.getElementById('emails').value;
+
+    if (name.length == "0") {
+        MessageText.innerHTML = `E-mail is Required`
+    } else {
+        sendMessage();
+    }
+}
+function ocultClass() {
+    const OcultList = document.getElementById('insertName');
+
+    OcultList.classList.replace('bol', 'ocult');
+    
 }
