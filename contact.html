@@ -38,12 +38,12 @@
                 <input type="text" name="name" id="nameLogin" required>
                 <legend>E-mail</legend>
                 
-                <input type="email" name="email" id="emails" required>
+                <input  type="email" name="email" id="emails" required  onclick="ocultClassMail()">
                     
                 <legend>Message</legend>
                 <textarea name="message" id="insertTextA" cols="46" rows="10" required></textarea>
-                <div id="MessageText"></div>
-                <div id="SendF" ></div>
+                <div class="bol" id="MessageText"></div>
+                <div  id="SendF" ></div>
                 <input class="SendTo" type="button" id="SForm" value="Send" onclick="verifiquedState()">     
                 
                 </div>

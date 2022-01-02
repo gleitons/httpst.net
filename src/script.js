@@ -54,7 +54,17 @@ function verifiquedState() {
 }
 function ocultClass() {
     const OcultList = document.getElementById('insertName');
+    const Ocultmail = document.getElementById('emails');
+
 
     OcultList.classList.replace('bol', 'ocult');
+    Ocultmail.classList.replace('bol', 'ocult');
+    
+}
+function ocultClassMail() {
+    
+    const Ocultmail = document.getElementById('MessageText');
+
+    Ocultmail.classList.replace('bol', 'ocult');
     
 }
