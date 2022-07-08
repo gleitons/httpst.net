@@ -1,11 +1,21 @@
-
+@font-face {
+    font-family: freeyonde-Black;
+    src: url(/src/fonts/Fira_Sans/FiraSans-Black.ttf);
+    
+}
+@font-face {
+    font-family: freeyonde-lite;
+    src: url(/src/fonts/Fira_Sans/FiraSans-Light.ttf);
+}
+:root {
+    --fb:freeyonde-Black;
+    --fl:freeyonde-lite;
+}
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
-body {
+body{
     width: 1200px;
     background-color: #667b8d;
     font-family: var(--fl);
@@ -126,19 +136,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-nav {
-    margin-top: 20px;
-}
-nav > a {
-    content: "coloc";
-    padding-top: 20px;
-    margin: 10px;
-    transition: 300ms;
-}
-nav >a:hover {
-    color: blue;
-    font-weight: 600;
-}
 .loginLoading::before {
     content: "";
     background-image: conic-gradient(
@@ -166,7 +163,6 @@ nav >a:hover {
 .link-free{
     text-decoration: none;
     color: rgb(202, 199, 199);
-    font-size: 25px;
 }
 a{
     text-decoration: none;
