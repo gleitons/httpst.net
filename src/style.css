@@ -150,6 +150,15 @@ nav >a:hover {
     position: absolute;
     margin-left: -20px;
     animation: rotateFreeyond 2s linear infinite;
+    transition: 300ms;
+}
+.loginLoading:hover::after{
+    background-image: conic-gradient(
+        #4bdf66 20deg,
+        transparent 120deg
+    );
+    content: ">>";
+    animation: rotateFreeyondre 1s linear infinite;
 }
 .loginLoading::after {
     content: "Free Yond";
@@ -252,7 +261,14 @@ a{
 
 
 
-
+@keyframes rotateFreeyondre {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 @keyframes rotateFreeyond {
     0%{
         transform: rotate(0deg);
