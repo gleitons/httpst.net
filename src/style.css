@@ -176,6 +176,10 @@ nav >a:hover {
     text-decoration: none;
     color: rgb(202, 199, 199);
     font-size: 25px;
+    transition: 400ms;
+}
+.link-free:hover {
+    color: rgb(3, 0, 176);
 }
 a{
     text-decoration: none;
@@ -332,6 +336,7 @@ a{
     .link-free{
         width: 360px;
     }
+   
     .welcome{
         
         display: block;
