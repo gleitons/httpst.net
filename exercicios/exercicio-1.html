@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <span id="exercicio"></span>
+    <div>
+        <p>Lampada</p>
+        <div>
+            <button onclick="lampada()" value="apagada" id="lamp">Acender</button>
+            <div>
+                <img id="imgLamp" src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const url = document.title;
+        document.querySelector('#exercicio').innerHTML = `<h1>${url}</h1>`
+
+        function lampada() {
+            const lampadaS = document.querySelector('#lamp').value;
+            const luzAcessa = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada-on.jpg";
+
+            if (lampadaS == "apagada") {
+            
+                document.querySelector('#imgLamp').setAttribute('src', `${luzAcessa}`)
+                document.querySelector('#lamp').value = 'acessa';
+                console.log("Acendeu")
+
+            } else {
+                const lampS = document.querySelector('#imgLamp');
+                lampS.setAttribute ('src', 'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg')
+                document.querySelector('#lamp').value = 'apagada';
+                console.log("Apagou")
+            }
+        }
+    </script>
+</body>
+</html>
