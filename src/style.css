@@ -172,14 +172,19 @@ nav >a:hover {
     margin-top: 5px;
     
 }
+.cima {
+    margin-bottom: -52px;
+}
 .freeY {
     width: 90%;
     margin: auto;
     text-align: center;
-    border: #008cff solid 1px;
+    margin-top: -80px;
+    margin-bottom: 20px;
 }
 #Tabela_01 {
     padding-left: 25%;
+    border: none;
     
 }
 #Tabela_01  tr {
