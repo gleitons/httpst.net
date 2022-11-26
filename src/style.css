@@ -172,6 +172,20 @@ nav >a:hover {
     margin-top: 5px;
     
 }
+.freeY {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: #008cff solid 1px;
+}
+#Tabela_01 {
+    padding-left: 25%;
+    
+}
+#Tabela_01  tr {
+   
+    padding: -10px 100px;
+}
 .link-free{
     text-decoration: none;
     color: rgb(202, 199, 199);
@@ -287,6 +301,11 @@ a{
         width: 100%;
     }    
 }
+@media (max-width:1200px) {
+    #Tabela_01 {
+        display: none;
+    }
+}
 @media (max-width:992px) {
     body{
         width: 962px;
@@ -355,6 +374,7 @@ a{
     footer{width: 100%;
     
     padding: 0px;
+    }
    
     
 }

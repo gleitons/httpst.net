@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W52D0F39ZY"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-W52D0F39ZY');
+        gtag('config', 'G-W52D0F39ZY');
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,40 +18,91 @@
     <link rel="stylesheet" href="/src/style.css">
     <title>WELCOME TO FREEYOND</title>
 </head>
+
 <body>
     <header>
         <div class="welcome">
             <div>
-                
+
                 <h1><a class="link-free" href="./">WELCOME TO FREEYOND</a></h1>
-                
+
             </div>
             <a href="./">
                 <div class="loginLoading">
                 </div>
             </a>
         </div>
-        
+
     </header>
     <main>
-        
+        <div class="freeY">
+            <table id="Tabela_01" width="801" height="478" cellpadding="0" cellspacing="0">
+
+
+                <div id="freeYo"></div>
+                <tr>
+
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_01.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_02.jpg" width="201" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_03.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_04.jpg" width="200" height="159" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_05.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_06.jpg" width="201" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_07.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_08.jpg" width="200" height="160" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_09.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_10.jpg" width="201" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_11.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_12.jpg" width="200" height="159" alt="">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
         <div class="LogintoFreeYond">
             <p>Login for to Access</p>
             <legend>Name</legend>
-            <div id="insertName" class="bol" ></div>
-                <input type="text" name="" id="nameLogin"  required onclick="ocultClass()">
-                
+            <div id="insertName" class="bol"></div>
+            <input type="text" name="" id="nameLogin" required onclick="ocultClass()">
+
             <legend>Password</legend>
             <div id="insertPass"></div>
-                <input type="password" name="" id="passworLogin" required>
-            
-            
+            <input type="password" name="" id="passworLogin" required>
+
+
             <input class="SendTo" type="button" value="Login" onclick="loginFreeyond()">
             <div id="connectFreeyond">
-                
+
             </div>
         </div>
-        
+
     </main>
     <footer>
         <h2>Everyone Deserves to Live</h2>
@@ -63,5 +115,31 @@
         </nav>
     </footer>
     <script src="/src/script.js"></script>
+    <script>
+
+
+        for (let i = 1; i <= 3; i++) {
+            const trB = document.createElement('tr')
+
+            for (let [td] = 1; [td] <= 4; [td]++) {
+                var coluna = document.createElement('td');
+                for (let imag = 0; imag <= 1; imag++) {
+                    var imagem = document.createElement('img');
+                    imagem.src = `/src/images/recorte-welcome-to-freeyond_0${td}.jpg`
+                    
+                }
+                coluna.appendChild(imagem)
+            }
+
+            trB.appendChild(coluna)
+            document.getElementById('freeYo').appendChild(trB);
+
+
+
+
+        }
+        //document.querySelector('#free').innerHTML = 'ok'
+    </script>
 </body>
+
 </html>

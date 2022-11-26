@@ -1,0 +1,13 @@
+<!-- const tabe = document.createElement('tr')
+            for (let td; td < 4; td++) {
+                const [td] = document.createElement('img');
+                img.src = `<img src="/src/images/recorte-welcome-to-freeyond_01.jpg" width="200" height="159" alt="">`;
+                document.getElementById('tr').appendChild(img);
+                down.innerHTML = "Image Element Added.";
+            } -->
+            document.getElementById('body').appendChild(tabe);
+
+
+            const documentd = document.getElementById('freeYo').innerHTML += `<td>
+                <img src="/src/images/recorte-welcome-to-freeyond_${tr}.jpg" width="200" height="160" alt="">
+            </td>`;
