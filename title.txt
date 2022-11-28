@@ -11,3 +11,47 @@
             const documentd = document.getElementById('freeYo').innerHTML += `<td>
                 <img src="/src/images/recorte-welcome-to-freeyond_${tr}.jpg" width="200" height="160" alt="">
             </td>`;
+
+            <tr>
+
+                    <td class="cima">
+                        <img src="/src/images/recorte-welcome-to-freeyond_01-min.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_02-min.jpg" width="201" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_03-min.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_04-min.jpg" width="200" height="159" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_05-min.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_06-min.jpg" width="201" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_07-min.jpg" width="200" height="160" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_08-min.jpg" width="200" height="160" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_09-min.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_10-min.jpg" width="201" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_11-min.jpg" width="200" height="159" alt="">
+                    </td>
+                    <td>
+                        <img src="/src/images/recorte-welcome-to-freeyond_12-min.jpg" width="200" height="159" alt="">
+                    </td>
+                </tr>

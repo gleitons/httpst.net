@@ -135,6 +135,12 @@ nav > a {
     margin: 10px;
     transition: 300ms;
 }
+.nethan {
+    width: 801px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
 nav >a:hover {
     color: blue;
     font-weight: 600;
@@ -179,8 +185,8 @@ nav >a:hover {
     width: 90%;
     margin: auto;
     text-align: center;
-    margin-top: -80px;
-    margin-bottom: 20px;
+    margin-top: -88px;
+    margin-bottom: -472px;
 }
 #Tabela_01 {
     padding-left: 25%;
@@ -344,9 +350,7 @@ a{
 }
 @media (max-width:360px) {
     header{
-        width: 360px;
-        
-        
+        width: 360px;    
         box-shadow: rgb(0 0 0 / 45%) 0px 5px 10px;
         text-align: center;
         padding: 0px;
@@ -357,6 +361,8 @@ a{
         padding: 0px;
         margin: 0px;
     }
+  
+    
     .link-free{
         width: 360px;
     }
